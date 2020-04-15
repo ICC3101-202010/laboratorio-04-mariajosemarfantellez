@@ -8,6 +8,6 @@ namespace laboratorio04
 {
     interface IMemory
     {
-        int Memory();
+        int Memory(); 
     }
 }

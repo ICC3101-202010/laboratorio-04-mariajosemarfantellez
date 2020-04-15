@@ -26,7 +26,8 @@ namespace laboratorio04
             int MemoryAsse = rnd.Next(0, 10);
             if (MemoryAsse == 5)
             {
-                Console.WriteLine("Assembly debe reiniciarse, ya que su memoria ha llegado a 5\n");
+                Console.WriteLine("Assembly debe reiniciarse, ya que su memoria ha llenado...");
+                System.Threading.Thread.Sleep(500);
                 return MemoryAsse;
             }
             else { return 0; }
@@ -35,14 +36,8 @@ namespace laboratorio04
         {
             if (MemoryAsse == 5)
             {
-                Console.WriteLine("Diga la máquina que desea reiniciar: r -> Reception, s -> Storage, a -> Assembly, c -> Check, p -> Packing\n");
-                respuesta = Console.ReadLine();
-                if (respuesta.ToLower() == "a")
-                {
-                    Console.WriteLine("Assembly se ha reiniciado y su memoria vuelve a 0\n");
-                    MemoryAsse = 0;
-                }
-                else { }
+                Console.WriteLine("Assembly se ha reiniciado y su memoria vuelve a 0\n");
+                MemoryAsse = 0;
             }
             else { }
         }

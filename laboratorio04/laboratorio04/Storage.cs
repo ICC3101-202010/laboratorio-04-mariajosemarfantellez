@@ -25,7 +25,8 @@ namespace laboratorio04
             int MemorySto = rnd.Next(0, 10);
             if (MemorySto == 3)
             {
-                Console.WriteLine("Storage debe reiniciarse, ya que su memoria ha llegado a 3\n");
+                Console.WriteLine("Storage debe reiniciarse, ya que su memoria ha llenado...");
+                System.Threading.Thread.Sleep(500);
                 return MemorySto;
             }
             else { return 0; }
@@ -34,14 +35,8 @@ namespace laboratorio04
         {
             if (MemorySto == 3)
             {
-                Console.WriteLine("Diga la máquina que desea reiniciar: r -> Reception, s -> Storage, a -> Assembly, c -> Check, p -> Packing\n");
-                respuesta = Console.ReadLine();
-                if (respuesta.ToLower() == "s")
-                {
-                    Console.WriteLine("Storage se ha reiniciado y su memoria vuelve a 0\n");
-                    MemorySto = 0;
-                }
-                else { }
+                Console.WriteLine("Storage se ha reiniciado y su memoria vuelve a 0\n");
+                MemorySto = 0;
             }
             else { }
         }

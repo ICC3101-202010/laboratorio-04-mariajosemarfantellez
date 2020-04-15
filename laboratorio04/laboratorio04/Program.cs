@@ -30,7 +30,7 @@ namespace laboratorio04
             packy.On();
             System.Threading.Thread.Sleep(1000);
 
-            int veces = 10;
+            int veces = 15;
             while (veces > 0)
             {
                 recep.Restart(recep.Memory());

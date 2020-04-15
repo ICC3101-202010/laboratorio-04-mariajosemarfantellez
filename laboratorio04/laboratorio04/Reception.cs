@@ -27,7 +27,8 @@ namespace laboratorio04
             int MemoryRec = rnd.Next(0, 10);
             if (MemoryRec == 1)
             {
-                Console.WriteLine("Reception debe reiniciarse, ya que su memoria ha llegado a 1\n");
+                Console.WriteLine("Reception debe reiniciarse, ya que su memoria ha llenado...");
+                System.Threading.Thread.Sleep(500);
                 return MemoryRec;
             }
             else{ return 0; }
@@ -36,16 +37,11 @@ namespace laboratorio04
         {
             if (MemoryRec == 1)
             {
-                Console.WriteLine("Diga la máquina que desea reiniciar: r -> Reception, s -> Storage, a -> Assembly, c -> Check, p -> Packing\n");
-                respuesta = Console.ReadLine();
-                if (respuesta.ToLower() == "r")
-                {
-                    Console.WriteLine("Reception se ha reiniciado y su memoria vuelve a 0\n");
-                    MemoryRec = 0;
-                }
-                else { }
+                Console.WriteLine("Reception se ha reiniciado y su memoria vuelve a 0\n");
+                MemoryRec = 0;
             }
             else { }
+            
         }
         public override void Off()
         {

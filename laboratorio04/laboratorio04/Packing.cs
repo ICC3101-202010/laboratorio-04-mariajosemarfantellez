@@ -25,7 +25,8 @@ namespace laboratorio04
             int MemoryPac = rnd.Next(0, 10);
             if (MemoryPac == 9)
             {
-                Console.WriteLine("Packing debe reiniciarse, ya que su memoria ha llegado a 9\n");
+                Console.WriteLine("Packing debe reiniciarse, ya que su memoria ha llenado...");
+                System.Threading.Thread.Sleep(500);
                 return MemoryPac;
             }
             else { return 0; }
@@ -34,14 +35,8 @@ namespace laboratorio04
         {
             if (MemoryPac == 9)
             {
-                Console.WriteLine("Diga la máquina que desea reiniciar: r -> Reception, s -> Storage, a -> Assembly, c -> Check, p -> Packing\n");
-                respuesta = Console.ReadLine();
-                if (respuesta.ToLower() == "p")
-                {
-                    Console.WriteLine("Packing se ha reiniciado y su memoria vuelve a 0\n");
-                    MemoryPac = 0;
-                }
-                else { }
+                Console.WriteLine("Packing se ha reiniciado y su memoria vuelve a 0\n");
+                MemoryPac = 0;
             }
             else { }
         }

@@ -26,7 +26,8 @@ namespace laboratorio04
             int MemoryChe = rnd.Next(0, 10);
             if (MemoryChe == 7)
             {
-                Console.WriteLine("Check debe reiniciarse, ya que su memoria ha llegado a 7\n");
+                Console.WriteLine("Check debe reiniciarse, ya que su memoria ha llenado...");
+                System.Threading.Thread.Sleep(500);
                 return MemoryChe;
             }
             else { return 0; }
@@ -35,14 +36,8 @@ namespace laboratorio04
         {
             if (MemoryChe == 7)
             {
-                Console.WriteLine("Diga la máquina que desea reiniciar: r -> Reception, s -> Storage, a -> Assembly, c -> Check, p -> Packing\n");
-                respuesta = Console.ReadLine();
-                if (respuesta.ToLower() == "c")
-                {
-                    Console.WriteLine("Check se ha reiniciado y su memoria vuelve a 0\n");
-                    MemoryChe = 0;
-                }
-                else { }
+                Console.WriteLine("Check se ha reiniciado y su memoria vuelve a 0\n");
+                MemoryChe = 0;
             }
             else { }
         }
