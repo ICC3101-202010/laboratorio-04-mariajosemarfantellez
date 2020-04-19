@@ -13,7 +13,6 @@ namespace laboratorio04
         {
             this.MemoryRec = MemoryRec;
         }
-
         public override void On()
         {
             Console.WriteLine("Reception se acaba de prender, su memoria parte desde 0\n");

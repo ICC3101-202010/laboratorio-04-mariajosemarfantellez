@@ -18,7 +18,6 @@ namespace laboratorio04
             Console.WriteLine("Assembly se acaba de prender, su memoria parte desde 0\n");
             MemoryAsse = 0;
         }
-
         Random rnd = new Random();
         string respuesta;
         public int Memory()

@@ -8,7 +8,7 @@ namespace laboratorio04
 {
     public abstract class CentralComputer
     {
-        public abstract void On(); 
+        public abstract void On();
         public abstract void Restart(int Memory);
         public abstract void Off();
     }
