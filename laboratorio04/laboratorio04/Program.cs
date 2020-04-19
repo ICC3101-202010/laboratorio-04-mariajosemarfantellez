@@ -15,6 +15,7 @@ namespace laboratorio04
             Assembly assem = new Assembly(0);
             Check chec = new Check(0);
             Packing packy = new Packing(0);
+            
 
             Console.WriteLine("El día acaba de comenzar\n");
             System.Threading.Thread.Sleep(1000);
